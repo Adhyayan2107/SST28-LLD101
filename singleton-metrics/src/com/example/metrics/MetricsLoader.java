@@ -21,6 +21,7 @@ public class MetricsLoader {
             props.load(fis);
         }
 
+        // BROKEN: should not create a new instance
         MetricsRegistry registry = MetricsRegistry.getInstance();
 
         for (String key : props.stringPropertyNames()) {
